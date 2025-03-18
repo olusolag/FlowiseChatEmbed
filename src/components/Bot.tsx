@@ -1621,16 +1621,17 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
                 enableInputHistory={true}
                 maxHistorySize={10}
               />
-            )}
-          </div>
-          {/*
-          < Badge
-            footer={props.footer}
-            badgeBackgroundColor={props.badgeBackgroundColor}
-            poweredByTextColor={props.poweredByTextColor}
-            botContainer={botContainer}
-          />
-          */}
+              {/*
+    <Badge
+        footer={props.footer}
+        badgeBackgroundColor={props.badgeBackgroundColor}
+        poweredByTextColor={props.poweredByTextColor}
+        botContainer={botContainer}
+    />
+*/}
+
+              
+           
         </div>
       </div>
       {sourcePopupOpen() && <Popup isOpen={sourcePopupOpen()} value={sourcePopupSrc()} onClose={() => setSourcePopupOpen(false)} />}
